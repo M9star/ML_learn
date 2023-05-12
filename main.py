@@ -7,6 +7,7 @@ from sklearn.metrics import mean_squared_error
 diabetes = datasets.load_diabetes()
 
 diabetes_x = diabetes.data[:,np.newaxis,2]
+# print(diabetes_x)
 
 diabetes_x_train =diabetes_x[:-30]
 diabetes_x_test = diabetes_x[-30: ]
